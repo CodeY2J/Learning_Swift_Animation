@@ -22,6 +22,10 @@
 		683E60D21DFFC7140010432C /* AnimationButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683E60D11DFFC7140010432C /* AnimationButton.storyboard */; };
 		685427911DFFD8550063C4DA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685427901DFFD8550063C4DA /* LoadingView.swift */; };
 		685427951DFFE5CE0063C4DA /* LoadingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685427941DFFE5CE0063C4DA /* LoadingView.storyboard */; };
+		685427971E00EEC00063C4DA /* Shake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685427961E00EEC00063C4DA /* Shake.storyboard */; };
+		6854279A1E00EF9C0063C4DA /* ShakeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685427991E00EF9C0063C4DA /* ShakeAnimationViewController.swift */; };
+		6854279C1E012E810063C4DA /* ShiningLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854279B1E012E810063C4DA /* ShiningLabel.swift */; };
+		6854279E1E013F390063C4DA /* Shining.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6854279D1E013F390063C4DA /* Shining.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		683E60D11DFFC7140010432C /* AnimationButton.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationButton.storyboard; sourceTree = "<group>"; };
 		685427901DFFD8550063C4DA /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		685427941DFFE5CE0063C4DA /* LoadingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoadingView.storyboard; sourceTree = "<group>"; };
+		685427961E00EEC00063C4DA /* Shake.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shake.storyboard; sourceTree = "<group>"; };
+		685427991E00EF9C0063C4DA /* ShakeAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeAnimationViewController.swift; sourceTree = "<group>"; };
+		6854279B1E012E810063C4DA /* ShiningLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiningLabel.swift; sourceTree = "<group>"; };
+		6854279D1E013F390063C4DA /* Shining.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shining.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,8 @@
 		683E60921DFF8D440010432C /* Learn_Swift_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				6854279F1E013F6B0063C4DA /* ShiningAnimation */,
+				685427981E00EED40063C4DA /* ShakeAnimation */,
 				6854278F1DFFD80D0063C4DA /* LoadingAnimation */,
 				683E60C81DFFA07A0010432C /* AnimatonButton */,
 				683E60C31DFF8EDE0010432C /* NavigationBar_Animation */,
@@ -125,6 +135,8 @@
 				683E60C11DFF8E040010432C /* NavigationBarAnimation.storyboard */,
 				683E60D11DFFC7140010432C /* AnimationButton.storyboard */,
 				685427941DFFE5CE0063C4DA /* LoadingView.storyboard */,
+				685427961E00EEC00063C4DA /* Shake.storyboard */,
+				6854279D1E013F390063C4DA /* Shining.storyboard */,
 			);
 			path = Learn_Swift_Animation;
 			sourceTree = "<group>";
@@ -171,6 +183,22 @@
 				685427901DFFD8550063C4DA /* LoadingView.swift */,
 			);
 			name = LoadingAnimation;
+			sourceTree = "<group>";
+		};
+		685427981E00EED40063C4DA /* ShakeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				685427991E00EF9C0063C4DA /* ShakeAnimationViewController.swift */,
+			);
+			name = ShakeAnimation;
+			sourceTree = "<group>";
+		};
+		6854279F1E013F6B0063C4DA /* ShiningAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6854279B1E012E810063C4DA /* ShiningLabel.swift */,
+			);
+			name = ShiningAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,9 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				683E609E1DFF8D450010432C /* LaunchScreen.storyboard in Resources */,
+				6854279E1E013F390063C4DA /* Shining.storyboard in Resources */,
 				683E609B1DFF8D450010432C /* Assets.xcassets in Resources */,
 				683E60991DFF8D440010432C /* Main.storyboard in Resources */,
 				683E60D21DFFC7140010432C /* AnimationButton.storyboard in Resources */,
+				685427971E00EEC00063C4DA /* Shake.storyboard in Resources */,
 				685427951DFFE5CE0063C4DA /* LoadingView.storyboard in Resources */,
 				683E60C21DFF8E040010432C /* NavigationBarAnimation.storyboard in Resources */,
 			);
@@ -310,6 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6854279A1E00EF9C0063C4DA /* ShakeAnimationViewController.swift in Sources */,
+				6854279C1E012E810063C4DA /* ShiningLabel.swift in Sources */,
 				685427911DFFD8550063C4DA /* LoadingView.swift in Sources */,
 				683E60961DFF8D440010432C /* ViewController.swift in Sources */,
 				683E60C51DFF8F320010432C /* HideNavigationBarViewController.swift in Sources */,
