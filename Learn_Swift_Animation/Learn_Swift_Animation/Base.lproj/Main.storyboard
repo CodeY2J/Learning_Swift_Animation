@@ -138,6 +138,26 @@
                                             <segue destination="LnW-mk-uUA" kind="show" id="CtL-7N-WsQ"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="7Nx-E5-QWG" style="IBUITableViewCellStyleDefault" id="QTc-ue-FIB">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QTc-ue-FIB" id="Wum-5j-m4V">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="wave动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Nx-E5-QWG">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jCJ-Zh-k9r" kind="show" id="ebK-8J-IP0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -191,6 +211,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmz-P8-0R3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="-747"/>
+        </scene>
+        <!--waveAnimationVC-->
+        <scene sceneID="dMY-Xf-JPN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="waveAnimationVC" storyboardName="WaveAnimation" referencedIdentifier="waveAnimationVC" id="jCJ-Zh-k9r" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gC3-H3-gSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="-694"/>
         </scene>
     </scenes>
 </document>
