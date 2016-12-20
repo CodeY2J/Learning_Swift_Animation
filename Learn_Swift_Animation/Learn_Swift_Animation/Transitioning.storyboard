@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zX1-2v-bYO">
+            <objects>
+                <viewController id="hMo-T4-MW7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cec-fM-HUF"/>
+                        <viewControllerLayoutGuide type="bottom" id="37h-OK-c0y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gF-j3-GQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dota2" translatesAutoresizingMaskIntoConstraints="NO" id="qSj-MT-GpF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qSj-MT-GpF" firstAttribute="top" secondItem="cec-fM-HUF" secondAttribute="bottom" id="Eck-Mj-qZw"/>
+                            <constraint firstAttribute="trailing" secondItem="qSj-MT-GpF" secondAttribute="trailing" id="GYc-Pz-cUf"/>
+                            <constraint firstItem="qSj-MT-GpF" firstAttribute="leading" secondItem="6gF-j3-GQi" secondAttribute="leading" id="U8C-Lg-h4T"/>
+                            <constraint firstItem="37h-OK-c0y" firstAttribute="top" secondItem="qSj-MT-GpF" secondAttribute="bottom" id="m0V-UH-9Dl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oNO-KO-MRA">
+                        <barButtonItem key="rightBarButtonItem" title="close" id="Esq-rg-yY9">
+                            <connections>
+                                <segue destination="YhW-XO-mfT" kind="unwind" unwindAction="backToHomeViewController:" id="3v8-6H-RBJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7G-Rl-yEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YhW-XO-mfT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="605.60000000000002" y="154.27286356821591"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Enp-XT-zXF">
+            <objects>
+                <navigationController storyboardIdentifier="transitionVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uwh-U6-Ggy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AuW-sa-UWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hMo-T4-MW7" kind="relationship" relationship="rootViewController" id="4sr-25-CSQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXm-XL-tja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dota2" width="320" height="480"/>
+    </resources>
+</document>

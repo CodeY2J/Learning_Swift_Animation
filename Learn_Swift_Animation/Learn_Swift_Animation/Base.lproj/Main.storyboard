@@ -30,7 +30,7 @@
         <!--首页-->
         <scene sceneID="san-ck-Hzk">
             <objects>
-                <tableViewController id="kGC-bd-X4D" sceneMemberID="viewController">
+                <tableViewController id="kGC-bd-X4D" customClass="HomeTableViewController" customModule="Learn_Swift_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3zz-oX-wK8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,6 +158,26 @@
                                             <segue destination="jCJ-Zh-k9r" kind="show" id="ebK-8J-IP0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="LQv-up-NgP" style="IBUITableViewCellStyleDefault" id="Xqb-Mw-3zm">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xqb-Mw-3zm" id="x0t-sx-O4m">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="transition动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LQv-up-NgP">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vqb-6e-dbH" kind="presentation" identifier="transition" id="8Wb-zh-JTL"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -219,6 +239,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC3-H3-gSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1809" y="-694"/>
+        </scene>
+        <!--transitionVC-->
+        <scene sceneID="OwL-SO-Gjn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transitioning" referencedIdentifier="transitionVC" id="vqb-6e-dbH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1H-Nq-z1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-657"/>
         </scene>
     </scenes>
 </document>
